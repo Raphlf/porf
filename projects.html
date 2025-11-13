@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Raphael</h1>
+      <nav class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang Saya</a>
+        <a href="projects.html">Proyek</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="projects-intro">
+      <h2>Proyek & Portofolio</h2>
+      <p>Filter berdasarkan kategori dan cari proyek dengan cepat.</p>
+      <div class="controls">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="frontend">Front-end</button>
+          <button class="filter-btn" data-filter="backend">Back-end</button>
+          <button class="filter-btn" data-filter="fullstack">Full-stack</button>
+        </div>
+        <div class="search">
+          <input id="searchInput" placeholder="Cari proyek" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projectsList" class="projects-grid">
+      <!-- Project items -->
+      <article class="project-item" data-category="frontend">
+        <img class="proj-thumb" src="assets/images/project1.jpg" alt="Project 1">
+        <div class="proj-body">
+          <h3 class="proj-title">Landing Page Web Festival</h3>
+          <p class="proj-desc">Landing page informatif untuk Web Festival yang interaktif</p>
+          <p><strong>Peran:</strong> Front-end Developer</p>
+          <p><strong>Teknologi:</strong> HTML, CSS</p>
+          <div class="proj-actions">
+            <button class="btn view-btn" data-id="p1">Lihat</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-item" data-category="frontend">
+        <img class="proj-thumb" src="assets/images/project2.jpg" alt="Project 2">
+        <div class="proj-body">
+          <h3 class="proj-title">Web Penjualan Sepatu</h3>
+          <p class="proj-desc">Page yang interaktif untuk penjualan Sepatu</p>
+          <p><strong>Peran:</strong> Front-end Developer</p>
+          <p><strong>Teknologi:</strong> HTML, CSS, JS</p>
+          <div class="proj-actions">
+            <button class="btn view-btn" data-id="p2">Lihat</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-item" data-category="fullstack">
+        <img class="proj-thumb" src="assets/images/project3.jpg" alt="Project 3">
+        <div class="proj-body">
+          <h3 class="proj-title">Page untuk CRUD data produk</h3>
+          <p class="proj-desc">Page untuk menambahkan, melihat, mengupdate, dan menghapus data dari php masuk database mysql</p>
+          <p><strong>Peran:</strong> Full-stack Developer</p>
+          <p><strong>Teknologi:</strong> HTML, PHP, CSS, MySQL</p>
+          <div class="proj-actions">
+            <button class="btn view-btn" data-id="p3">Lihat</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Tutup">×</button>
+      <div id="modalInner"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Kontak: <a href="672024013@student.uksw.edu">672024013@student.uksw.edu</a></p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
